@@ -1,9 +1,13 @@
 export class Pokemon {
 
     name: string;
+    speed: number;
 
-
-    constructor(name) {
+    constructor(name,speed) {
         this.name = name;
+        this.speed = speed;
     }
+
 }
+
+

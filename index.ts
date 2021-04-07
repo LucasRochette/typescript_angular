@@ -1,5 +1,8 @@
 import {Pokemon} from "./model";
 
-var pokemon = new Pokemon("pika");
+var p1 = new Pokemon("pika",100);
 
-console.log(pokemon.name);
+var p2 = new Pokemon("draco",95);
+
+console.log(p1.name);
+console.log(p2.name);
