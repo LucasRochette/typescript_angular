@@ -1,10 +1,27 @@
-import { whoAttacksFirst } from './test';
 import {Pokemon} from "../model";
 
-var pika = new Pokemon("pikachu", 20);
-var draco = new Pokemon("dracofeu",10)
 
 
-test('whoAttackFirst', () => {
-    expect(whoAttacksFirst(pika,draco)).toBe(pika);
+describe("pokemon attack test", () => {
+
+    let pika: Pokemon;
+    let draco: Pokemon;
+
+    beforeEach(() => {
+        pika = new Pokemon("pikachu", 20, 100, 20,10);
+        draco = new Pokemon("dracofeu",10,100,20,10);
+    })
+
+
+
+    it("faster pokemon should attack first", () => {
+        expect(Pokemon.FirstToAttack(pika,draco)).toBe(pika);
+    });
+
+
+    it('pikachu should beat dracofeu', () => {
+        pika.fight(draco);
+        expect(draco.hp).toBe(0);
+    });
+
 });

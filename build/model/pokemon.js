@@ -6,6 +6,14 @@ var Pokemon = /** @class */ (function () {
         this.name = name;
         this.speed = speed;
     }
+    Pokemon.FirstToAttack = function (poke1, poke2) {
+        if (poke1.speed > poke2.speed) {
+            return poke1;
+        }
+        else {
+            return poke2;
+        }
+    };
     return Pokemon;
 }());
 exports.Pokemon = Pokemon;

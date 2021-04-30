@@ -4,6 +4,7 @@
     "target": "es5",
     "sourceMap": true,
     "outDir": "./build",
+    "types": ["jest", "node","@types/jest"]
   },
   "exclude": [
     "node_modules"
