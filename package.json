@@ -4,8 +4,8 @@
   "description": "pokemon",
   "main": "index.ts",
   "scripts": {
-    "start" : "node build/index.js",
-    "build" : "tsc",
+    "start": "node build/index.js",
+    "build": "tsc",
     "test": "jest"
   },
   "keywords": [],
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/LucasRochette/typescript_angular/issues"
   },
-  "homepage": "https://github.com/LucasRochette/typescript_angular#readme"
+  "homepage": "https://github.com/LucasRochette/typescript_angular#readme",
+  "dependencies": {
+    "@types/jest": "^26.0.23"
+  }
 }
